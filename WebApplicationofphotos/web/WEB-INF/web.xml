@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AddPhotoServlet</servlet-name>
+        <servlet-class>AddPhotoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayPhotoServlet</servlet-name>
+        <servlet-class>DisplayPhotoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListPhotoServlet</servlet-name>
+        <servlet-class>ListPhotoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPhotoServlet</servlet-name>
+        <url-pattern>/AddPhotoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayPhotoServlet</servlet-name>
+        <url-pattern>/DisplayPhotoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListPhotoServlet</servlet-name>
+        <url-pattern>/ListPhotoServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
